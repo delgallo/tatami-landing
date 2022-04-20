@@ -1,0 +1,51 @@
+button {
+    cursor: pointer;
+}
+
+:root {
+    font-family: "Bebas Neue Pro", Helvetica, Arial, sans-serif;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #1F1B24;
+}
+
+.head {
+    margin: 0 10%
+}
+
+.head h1 {
+    color:aliceblue;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 4em;
+}
+
+.head p {
+    color:aliceblue;
+    text-align: center;
+    font-size: larger;
+    padding: 1em 10%
+}
+
+@media only screen and (max-width: 600px) {
+
+    .head h1 {
+        font-size: 2.5em;
+        margin: 3em 1em 2em;
+    }
+
+    .head p {
+        font-size: large;
+        padding: 0;
+    }
+
+    .head {
+        margin: 0 5%;
+    }
+
+}
