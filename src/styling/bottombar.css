@@ -1,0 +1,13 @@
+
+.bottombar {
+    text-align: center;
+    padding: 1em;
+    border-top: 1px solid #ffffff54;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .bottombar {
+        font-size: x-small;
+    }
+}

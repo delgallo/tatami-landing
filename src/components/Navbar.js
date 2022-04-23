@@ -1,17 +1,16 @@
 import "../styling/nav.css"
 import "../styling/button.css"
+import { PopupButton } from '@typeform/embed-react'
 
 const Navbar = () => {
     return (
         <nav>
             <div className="nav-title">
-                🧙‍♂️ Wisengard
+                🧙‍♂️ Tatami
             </div>
-            <button className="button-card">
-                <span>
-                    Sign up
-                </span>
-            </button>
+            <PopupButton id="kKo6RYeF" className="button-85">
+                Apply
+            </PopupButton>
         </nav>
     )
 }

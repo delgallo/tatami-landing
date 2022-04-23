@@ -1,9 +1,9 @@
 
 .feature {
-    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    margin: 3em 10%;
 }
 
 .feature img {
@@ -13,20 +13,66 @@
 }
 
 .feature-text {
-    margin: 0 10%;
     color: aliceblue;
+    padding: 15vh 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.feature-text > div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+}
 
-.feature-text h2 {
-    text-align: center;
+.feature-text h1 {
     font-weight: bolder;
-    font-size: 3em;
+    color: aquamarine;
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
 }
 
-.feature-text p {
-    font-size: larger;
+.feature-text > p {
+    font-size: x-large;
+    text-align: right;
+    width: 60%;
+    margin-left: 10%;
 }
+
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-list > div {
+    flex: 1 1 20vw;
+    min-height: 20vw;
+    border: 1px solid #f0f8ffb0;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info-list > div > p {
+    padding: 2em 0;
+}
+
+@media only screen and (min-width: 1800px) {
+
+    .feature {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -40,9 +86,28 @@
 
     .feature-text {
         margin: 0 5%;
+        padding: 5vh 0;
+        flex-direction: column;
+        gap: 2em;
     }
 
-    .feature-text h2 { 
-        font-size: 2em;
+    .feature-text > div {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .feature-text > p {
+        width: 100%;
+        font-size: larger;
+        text-align: left;
+    }
+
+    .feature-text h1 { 
+        font-size: 3em;
+    }
+
+    .info-list div {
+        width: max-content;
     }
 }

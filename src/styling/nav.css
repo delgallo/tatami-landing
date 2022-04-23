@@ -4,7 +4,12 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1em 3em;
-    background-color:#121212;
+    background-color:#121212a1;
+    position: fixed;
+    width: 100vw;
+    box-sizing: border-box;
+    backdrop-filter: blur(32px);
+    z-index: 2;
 }
 
 .nav-title {

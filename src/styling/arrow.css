@@ -1,0 +1,13 @@
+.arrow {
+    animation: MoveUpDown 1s linear infinite;
+    filter: invert(1);
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+        padding-top: 0em;
+    }
+    50% {
+      padding-top: 0.5em;
+    }
+  }
