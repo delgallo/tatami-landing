@@ -12,6 +12,17 @@ nav {
     z-index: 2;
 }
 
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo > img {
+    height: 2em;
+    padding: 8px;
+}
+
 .nav-title {
     font-weight: bolder;
     color: aliceblue;
@@ -21,11 +32,11 @@ nav {
 @media only screen and (max-width: 600px) { 
 
     nav {
-        padding: 1em;
+        padding: 0.5em;
         justify-content: center;
     }
     
-    button {
+    nav > button {
         display: none;
     }
 }

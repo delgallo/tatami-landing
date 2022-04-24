@@ -8,14 +8,14 @@ const Program = () => {
             <div className="feature-text">
                 <div>
                     <h1 style={{textAlign: "center"}}>Program</h1>
-                    <PopupButton id="kKo6RYeF" className="button-85 big">
-                        Apply
-                    </PopupButton>
                 </div>
                 <p>
                     una accademia esclusiva per gamer dove possono accedere a contenuti premium, coaching, review dei propri video e networking per un futuro nel mondo del gaming.
                 </p>
             </div>
+            <PopupButton id="kKo6RYeF" className="button-85 big">
+                Apply
+            </PopupButton>
             <div className="info-list">
                 <Infobox
                     emoji="🏋️‍♂️"

@@ -1,5 +1,6 @@
 import "../styling/FAQ.css"
 import "../styling/feature.css"
+import { PopupButton } from '@typeform/embed-react'
 
 const FAQ = () => {
     const QAs = [
@@ -22,15 +23,16 @@ const FAQ = () => {
     ]
     return (
         <div className="feature">
-            <div className="feature-text">
-                <h1>FAQs</h1>
-            </div>
+            <h1 style={{textAlign: "center", padding: "1em"}}>FAQs</h1>
             { QAs.map((qa) => 
                 <div className="faq" key={qa.Q}>
                     <h2>{qa.Q}</h2>
                     <p>{qa.A}</p>
                 </div>
             )}
+            <PopupButton id="kKo6RYeF" className="button-85 big">
+                Apply
+            </PopupButton>
             <div style={{textAlign: "center", padding: "2em 0"}}>
                 <h2 style={{fontSize: "x-large", margin: 0}}>Still have doubts?</h2> 
                 <p>If you want to talk to us directly shoot us a message on <a href="" style={{color: "aquamarine", fontWeight: "bold"}}>Discord</a></p>
