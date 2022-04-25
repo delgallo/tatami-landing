@@ -7,7 +7,7 @@ const Program = () => {
 		<div className="feature">
 			<div className="feature-text">
 				<div>
-					<h1 style={{ textAlign: "center" }}>Program</h1>
+					<h1 style={{ textAlign: "center" }}>Academy</h1>
 				</div>
 				<p>
 					Tatami is an elite academy that helps ambitious gamers, no

@@ -1,19 +1,18 @@
 import "../styling/arrow.css"
 import arrow from "../assets/arrow-down.svg"
-import clip from "../assets/clips.mp4"
 
 const Head = () => {
 	return (
 		<div className="head">
 		    <video loop autoPlay muted>
 				<source
-					src= {clip}
+					src = "https://tatami-static.s3.eu-central-1.amazonaws.com/Clips.mp4"
 					type="video/mp4"
 				/>
         		Your browser does not support the video tag.
       		</video>
 			<h1>
-				Bringing the eSport ecosystem into your home
+				Apply, learn & dominate the server. This is Tatami
 			</h1>
 			<div
 				onClick={() =>
