@@ -1,4 +1,3 @@
-import gaming from "../assets/clips.mp4"
 import "../styling/arrow.css"
 import arrow from "../assets/arrow-down.svg"
 
@@ -7,7 +6,7 @@ const Head = () => {
 		<div className="head">
 		    <video loop autoPlay muted>
 				<source
-					src= {process.env.PUBLIC_URL + gaming}
+					src= {process.env.PUBLIC_URL + "./clips.mp4"}
 					type="video/mp4"
 				/>
         		Your browser does not support the video tag.
