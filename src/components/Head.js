@@ -12,7 +12,7 @@ const Head = () => {
         		Your browser does not support the video tag.
       		</video>
 			<h1>
-				Apply, learn & dominate the server. This is Tatami
+				Apply, learn & dominate the server. This is Tatami.
 			</h1>
 			<div
 				onClick={() =>

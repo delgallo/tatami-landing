@@ -37,7 +37,7 @@
 
 .feature-text > p {
     font-size: x-large;
-    text-align: right;
+    text-align: left;
     width: 60%;
     margin-left: 10%;
 }
@@ -49,8 +49,6 @@
 
 .info-list > div {
     flex: 1 1 20vw;
-    min-width: 300px;
-    min-height: 20vw;
     border: 1px solid #f0f8ffb0;
     border-radius: 1em;
     padding: 2em;
@@ -65,6 +63,9 @@
     padding: 2em 0;
 }
 
+
+
+
 @media only screen and (min-width: 1800px) {
 
     .feature {
@@ -75,7 +76,12 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
+
+    .info-list > div {
+        flex: 100%;
+        margin: 1em 20%;
+    }
 
     .feature {
         flex-direction: column;
@@ -89,7 +95,7 @@
         margin: 0 5%;
         padding: 5vh 0;
         flex-direction: column;
-        gap: 2em;
+        gap: 3em;
     }
 
     .feature-text > div {
@@ -109,8 +115,20 @@
         font-size: 3em;
         margin: 0;
     }
+}
 
-    .info-list div {
-        width: max-content;
+@media only screen and (max-width: 800px) {
+
+    .info-list > div {
+        margin: 1em 10%;
     }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .info-list > div {
+        margin: 1em;
+    }
+
 }

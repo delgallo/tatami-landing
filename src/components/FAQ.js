@@ -10,7 +10,7 @@ const FAQ = () => {
 		},
 		{
 			Q: "How can I apply to be a coach?",
-			A: "Hi, we are super happy to partner with new coaches, try to surprise us by filling out this application.",
+			A: <>Hi, we are super happy to partner with new coaches. Try to surprise us by filling out this <a href="https://ynd1i9jcywl.typeform.com/to/HibHaWGg">application</a>.</>,
 		},
 		{
 			Q: "Which language is the service offered in?",
