@@ -17,9 +17,10 @@
 
 .big {
   font-size: larger;
-  padding: 2vh 0;
-  width: 30%;
-  margin: 0 35% 10vh;
+  padding: 1em 0;
+  width: 20em;
+  margin: 5vh auto 10vh;
+  display: block;
 }
 
 .button-85:before {

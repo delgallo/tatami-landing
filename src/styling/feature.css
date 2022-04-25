@@ -58,7 +58,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 .info-list > div > p {
@@ -105,7 +105,7 @@
         margin: 0;
     }
 
-    .feature-text h1 { 
+    .feature-text > div > h1 { 
         font-size: 3em;
         margin: 0;
     }

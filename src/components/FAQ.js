@@ -23,7 +23,7 @@ const FAQ = () => {
 	]
 	return (
 		<div className="feature">
-			<h1 style={{ textAlign: "center", padding: "1em" }}>FAQs</h1>
+			<h1 style={{ textAlign: "center", padding: "5vh" }}>FAQs</h1>
 			{QAs.map(qa => (
 				<div className="faq" key={qa.Q}>
 					<h2>{qa.Q}</h2>

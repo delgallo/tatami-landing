@@ -16,9 +16,7 @@ const Program = () => {
 					eSports, or coaching.
 					<br />
 					<br />
-					Here you will find all the resources that will make you step
-					up your game in just one affordable subscription. Our method
-					is tested & designed with the best coaches, you won't
+					Our method is tested & designed with the best coaches, you won't
 					recognize yourself at the end of the program.
 				</p>
 			</div>
