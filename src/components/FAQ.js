@@ -9,6 +9,10 @@ const FAQ = () => {
 			A: "The academy is open to all League of Legends and Valorant players. But fear not, our team is moving fast, our developers are stallions, and we are partnering with more and more coaches. We already have plans in place to expand into other games! If you'd like to recommend a game for us to cover, click here",
 		},
 		{
+			Q: "When will the first cohort start?",
+			A: "We are aiming to have the program up and running by early June; the exact date will be announced shortly."
+		},
+		{
 			Q: "How can I apply to be a coach?",
 			A: <>Hi, we are super happy to partner with new coaches. Try to surprise us by filling out this <a href="https://ynd1i9jcywl.typeform.com/to/HibHaWGg">application</a>.</>,
 		},

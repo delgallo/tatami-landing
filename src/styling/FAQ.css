@@ -10,11 +10,11 @@
 
 .faq > h2 {
     width: 40%;
-    margin-right: 2%;
+    margin-right: 5%;
 }
 
 .faq > p {
-    width: 58%;
+    width: 55%;
 }
 
 @media only screen and (min-width: 1800px) {

@@ -14,6 +14,9 @@ const Program = () => {
 					<br />
 					<br />
 					Our method is tested & designed with the best coaches; you will be surprised by what you are truly capable of.
+					<br />
+					<br />
+					Applicants for the first cohort must submit their applications by the <span style={{color: "aquamarine", fontWeight: "bold"}}>7th of May</span>.
 				</p>
 			</div>
 			<PopupButton id="kKo6RYeF" className="button-85 big">
