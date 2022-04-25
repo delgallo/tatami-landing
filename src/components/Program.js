@@ -27,7 +27,7 @@ const Program = () => {
 				/>
 				<Infobox
 					emoji="🥋"
-					title="Learn and practice with like-minded players"
+					title="Learn and practice with other players"
 					text="During these sessions, you will learn game mechanics, practice advanced strategies, and train along with other players. A sensei will oversee the session, ensuring every player learns and improves."
 				/>
 				<Infobox
