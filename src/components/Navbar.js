@@ -10,7 +10,7 @@ const Navbar = () => {
 				<img src={logo} alt="logo" />
 				<div className="nav-title">Tatami</div>
 			</div>
-			<PopupButton id="kKo6RYeF" className="button-85">
+			<PopupButton id="kKo6RYeF" className="button-85" onClick={() => window.fbq('trackCustom', 'clicked_apply')}>
 				Apply
 			</PopupButton>
 		</nav>

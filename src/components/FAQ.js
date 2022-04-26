@@ -34,7 +34,7 @@ const FAQ = () => {
 					<p>{qa.A}</p>
 				</div>
 			))}
-			<PopupButton id="kKo6RYeF" className="button-85 big">
+			<PopupButton id="kKo6RYeF" className="button-85 big" onClick={() => window.fbq('trackCustom', 'clicked_apply')}>
 				Apply
 			</PopupButton>
 			<div style={{ textAlign: "center", padding: "2em 0" }}>

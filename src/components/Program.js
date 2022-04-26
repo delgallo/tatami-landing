@@ -19,7 +19,7 @@ const Program = () => {
 					Applicants for the first cohort must submit their applications by the <span style={{color: "aquamarine", fontWeight: "bold"}}>7th of May</span>.
 				</p>
 			</div>
-			<PopupButton id="kKo6RYeF" className="button-85 big">
+			<PopupButton id="kKo6RYeF" className="button-85 big" onClick={() => window.fbq('trackCustom', 'clicked_apply')}>
 				Apply
 			</PopupButton>
 			<div className="info-list">
