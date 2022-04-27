@@ -4,13 +4,13 @@ import { PopupButton } from "@typeform/embed-react"
 
 const Program = () => {
 	return (
-		<div className="feature">
+		<div className="feature" id="program">
 			<div className="feature-text">
 				<div>
 					<h1 style={{ textAlign: "center" }}>Academy</h1>
 				</div>
 				<p>
-					Tatami is an elite academy that trains ambitious gamers, to achieve their goals, dominate the server, and unlock their full potential.
+					Tatami is an elite academy that trains ambitious gamers to achieve their goals, dominate the server, and unlock their full potential.
 					<br />
 					<br />
 					Our method is tested & designed with the best coaches; you will be surprised by what you are truly capable of.
@@ -19,7 +19,7 @@ const Program = () => {
 					Applicants for the first cohort must submit their applications by the <span style={{color: "aquamarine", fontWeight: "bold"}}>7th of May</span>.
 				</p>
 			</div>
-			<PopupButton id="kKo6RYeF" className="button-85 big" onClick={() => window.fbq('trackCustom', 'clicked_apply')}>
+			<PopupButton id="kKo6RYeF" className="button-85 big">
 				Apply
 			</PopupButton>
 			<div className="info-list">

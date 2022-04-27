@@ -6,7 +6,7 @@ const FAQ = () => {
 	const QAs = [
 		{
 			Q: "Which games are covered by the subscription?",
-			A: <>The academy is open to all League of Legends and Valorant players. But fear not, our team is moving fast, our developers are stallions, and we are partnering with more and more coaches. We already have plans in place to expand into other games! If you'd like to recommend a game for us to cover, <a href="mailto:support@tatami.gg">click here</a>.</>,
+			A: <>The academy is open to all <b>League of Legends</b>, <b>CS:GO</b> <b>and Valorant players</b>. But fear not, our team is moving fast, our developers are stallions, and we are partnering with more and more coaches. We already have plans in place to expand into other games! If you'd like to recommend a game for us to cover, <a href="mailto:support@tatami.gg">click here</a>.</>,
 		},
 		{
 			Q: "When will the first cohort start?",
@@ -26,7 +26,7 @@ const FAQ = () => {
 		},
 	]
 	return (
-		<div className="feature">
+		<div className="feature" id="faq">
 			<h1 style={{ textAlign: "center", padding: "5vh" }}>FAQs</h1>
 			{QAs.map(qa => (
 				<div className="faq" key={qa.Q}>
@@ -34,10 +34,10 @@ const FAQ = () => {
 					<p>{qa.A}</p>
 				</div>
 			))}
-			<PopupButton id="kKo6RYeF" className="button-85 big" onClick={() => window.fbq('trackCustom', 'clicked_apply')}>
+			<PopupButton id="kKo6RYeF" className="button-85 big">
 				Apply
 			</PopupButton>
-			<div style={{ textAlign: "center", padding: "2em 0" }}>
+			<div style={{ textAlign: "center", padding: "2em 0" }} id="contact">
 				<h2 style={{ fontSize: "x-large", margin: 0 }}>
 					Still have doubts?
 				</h2>

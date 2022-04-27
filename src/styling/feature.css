@@ -62,14 +62,19 @@
     padding: 0;
 }
 
-
-
-
 @media only screen and (min-width: 1800px) {
 
-    .feature {
+    .feature, .info-list {
         margin: 0 auto;
         width: 80%;
+    }
+
+    .feature-text > p {
+        margin: auto 10%;
+    }
+
+    .info-list > div {
+        flex: 1 1 15vw;
     }
 
 }

@@ -114,3 +114,10 @@ video {
     }
 
 }
+
+@media only screen and (max-height: 600px) {
+    .head h1 {
+        font-size: 2em;
+        width: 80%;
+    }
+}
