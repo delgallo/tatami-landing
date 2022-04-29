@@ -33,7 +33,7 @@ video {
     filter: brightness(.5);
 }
 
-nav > .button-85 {
+nav .button-85 {
     padding: 1em 3em;
     font-size: medium;
     width: auto;
