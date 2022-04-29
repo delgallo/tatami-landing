@@ -10,10 +10,10 @@ const Program = () => {
 					<h1 style={{ textAlign: "center" }}>Academy</h1>
 				</div>
 				<p>
-					Tatami is an elite academy that trains ambitious gamers to achieve their goals, dominate the server, and unlock their full potential.
+					Tatami is an elite academy that unlocks your full potential & gets you scouted by professional teams.
 					<br />
 					<br />
-					Our method is tested & designed with the best coaches; you will be surprised by what you are truly capable of.
+					Our classes are designed by the best coaches; you will be surprised by what you are truly capable of.
 					<br />
 					<br />
 					Applicants for the first cohort must submit their applications by the <span style={{color: "aquamarine", fontWeight: "bold"}}>7th of May</span>.
