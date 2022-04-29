@@ -1,7 +1,7 @@
 import "../styling/nav.css"
 import "../styling/button.css"
-import { PopupButton } from "@typeform/embed-react"
 import logo from "../assets/logo.png"
+import Apply from "./Apply"
 
 const Navbar = () => {
 	return (
@@ -10,9 +10,7 @@ const Navbar = () => {
 				<img src={logo} alt="logo" />
 				<div className="nav-title">Tatami</div>
 			</div>
-			<PopupButton id="kKo6RYeF" className="button-85">
-				Apply
-			</PopupButton>
+			<Apply/>
 		</nav>
 	)
 }

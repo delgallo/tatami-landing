@@ -1,6 +1,6 @@
 import "../styling/FAQ.css"
 import "../styling/feature.css"
-import { PopupButton } from "@typeform/embed-react"
+import Apply from "./Apply"
 
 const FAQ = () => {
 	const QAs = [
@@ -34,9 +34,7 @@ const FAQ = () => {
 					<p>{qa.A}</p>
 				</div>
 			))}
-			<PopupButton id="kKo6RYeF" className="button-85 big">
-				Apply
-			</PopupButton>
+			<Apply/>
 			<div style={{ textAlign: "center", padding: "2em 0" }} id="contact">
 				<h2 style={{ fontSize: "x-large", margin: 0 }}>
 					Still have doubts?

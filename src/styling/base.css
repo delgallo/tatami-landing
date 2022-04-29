@@ -33,6 +33,13 @@ video {
     filter: brightness(.5);
 }
 
+nav > .button-85 {
+    padding: 1em 3em;
+    font-size: medium;
+    width: auto;
+    margin: 0;
+}
+
 .head {
     padding: 0 10%;
     height: 100vh;

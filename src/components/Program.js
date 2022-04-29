@@ -1,8 +1,9 @@
 import "../styling/feature.css"
 import Infobox from "./Infobox"
-import { PopupButton } from "@typeform/embed-react"
+import Apply from "./Apply";
 
 const Program = () => {
+	console.log("ciao")
 	return (
 		<div className="feature" id="program">
 			<div className="feature-text">
@@ -19,9 +20,7 @@ const Program = () => {
 					Applicants for the first cohort must submit their applications by the <span style={{color: "aquamarine", fontWeight: "bold"}}>7th of May</span>.
 				</p>
 			</div>
-			<PopupButton id="kKo6RYeF" className="button-85 big">
-				Apply
-			</PopupButton>
+			<Apply/>
 			<div className="info-list">
 				<Infobox
 					emoji="⛩️"
