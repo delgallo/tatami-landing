@@ -22,7 +22,7 @@ const Session = () => {
     const QAs = [
         {
             Q: "When will the lesson take place?",
-            A: `The lesson will take place at 6.30 PM (GTM+1) on friday 6th of May (${formattedDate} PM for you)`
+            A: `The lesson will take place at 6.30 PM (GMT+1) on friday 6th of May (${formattedDate} PM for you)`
         },
         {
             Q: "Where is going to be held?",
