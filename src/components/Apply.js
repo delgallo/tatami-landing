@@ -1,15 +1,15 @@
-import { PopupButton } from "@typeform/embed-react"
+import { Link } from "react-router-dom"
 
 const Apply = () => {
 
     const queryParams = new URLSearchParams(window.location.search)
 
     return(
-        <div onClick={() => window.gtag('event', 'click_apply')}>
-        	<PopupButton id={`kKo6RYeF#referral=${queryParams.get('r')}&hash=${Math.floor(Math.random() * 1000000)}`} className="button-85 b-header">
-				Apply
-			</PopupButton>
-        </div>
+        <Link to={{pathname: "/wave-management"}}>
+            <button onClick={() => window.gtag('event', 'click_apply')} className="button-85 b-header">
+                    Join class
+            </button>
+        </Link>
     )
 }
 

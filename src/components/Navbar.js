@@ -1,6 +1,6 @@
 import "../styling/nav.css"
 import "../styling/button.css"
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from "../assets/logo.png"
 import Apply from "./Apply"
 
@@ -10,10 +10,10 @@ const Navbar = () => {
 
 	return (
 		<nav>
-			<div className="logo">
+			<Link to={{pathname: "/"}} className="logo">
 				<img src={logo} alt="logo" />
 				<div className="nav-title">Tatami</div>
-			</div>
+			</Link>
 			{ location.pathname === "/" && <Apply/> }
 		</nav>
 	)
