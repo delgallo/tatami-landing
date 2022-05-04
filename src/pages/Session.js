@@ -38,7 +38,7 @@ const Session = () => {
                         </div> 
                         <div>
                             <Coach/>
-                            <button className="button-85" style={{margin: "2em 0"}}>Buy Now</button>
+                            <button className="button-85" style={{margin: "2em 0"}} onClick={() => window.open("https://hpr.co/2SKQj0VbhteFrSWIe6A2s")}>Buy Now</button>
                             <p style={{textAlign: "center"}}>The session is going to be on the 6th of May</p>
                         </div>
                     </div>
