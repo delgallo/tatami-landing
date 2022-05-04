@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"
 import "../styling/session.css"
 import "../styling/FAQ.css"
 import Bottombar from "../components/Bottombar"
+import { useEffect } from "react"
 
 const Session = () => {
 	const convertTZ = (date, tzString) => {
@@ -13,6 +14,10 @@ const Session = () => {
 			)
 		)
 	}
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
 	const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 	const hisDate = convertTZ("2022/05/06 6:30:00 +0100", userTimezone)

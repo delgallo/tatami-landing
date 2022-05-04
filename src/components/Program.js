@@ -22,13 +22,6 @@ const Program = () => {
 					Coming soon we will also have 1 to 1 coaching and an
 					official graduation with the chance of playing & get scouted
 					by a professional eSport team!
-					<br />
-					<br />
-					Applicants for the first cohort must submit their
-					applications by the{" "}
-					<span style={{ color: "aquamarine", fontWeight: "bold" }}>
-						7th of May
-					</span>
 					.
 				</p>
 			</div>
