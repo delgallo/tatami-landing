@@ -6,7 +6,7 @@ const FAQ = () => {
 	const QAs = [
 		{
 			Q: "Which games are covered by the subscription?",
-			A: <>The academy is open to all <b>League of Legends</b>, <b>CS:GO</b> <b>and Valorant players</b>. But fear not, our team is moving fast, our developers are stallions, and we are partnering with more and more coaches. We already have plans in place to expand into other games! If you'd like to recommend a game for us to cover, <a href="mailto:support@tatami.gg">click here</a>.</>,
+			A: <>The academy is open to all <b>League of Legends</b>, <b>CS:GO</b> <b>and Valorant players</b>. But fear not, our team is moving fast, our developers are stallions, and we are partnering with more and more coaches. We already have plans in place to expand into other games! If you'd like to recommend a game for us to cover, <a href="mailto:team@tatami.gg">click here</a>.</>,
 		},
 		{
 			Q: "When will the first cohort start?",
@@ -40,7 +40,7 @@ const FAQ = () => {
 					Still have doubts?
 				</h2>
 				<p>
-					To reach us directly, shoot us a message <a href="mailto:support@tatami.gg">here</a>
+					To reach us directly, shoot us a message <a href="mailto:team@tatami.gg">here</a>
 				</p>
 			</div>
 		</div>

@@ -77,9 +77,12 @@
 
 @media only screen and (max-width: 600px) { 
 
-  .button-85 {
+  .b-header {
     width: 60%;
     margin: 0 20% 5vh;
+  }
+  
+  .button-85 {
     padding: 0.6em 0;
   }
 

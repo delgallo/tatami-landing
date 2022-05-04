@@ -3,7 +3,6 @@ import Infobox from "./Infobox"
 import Apply from "./Apply";
 
 const Program = () => {
-	console.log("ciao")
 	return (
 		<div className="feature" id="program">
 			<div className="feature-text">

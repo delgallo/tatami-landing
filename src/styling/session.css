@@ -1,0 +1,107 @@
+
+.session-bg {
+    flex-direction: row;
+    width: 100%;
+    padding: 8em 2em;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, transparent 20vh, var(--background) 60vh),
+        url(https://notagamer.net/wp-content/uploads/2020/10/Minions_2018_April_Fools_promo_01-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+
+}
+
+.session {
+    background-color: var(--background);
+    backdrop-filter: blur(8px);
+    padding: 2em;
+    border-radius: 1em;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.session > h1 {
+    text-align: center;
+    padding: .5em 1em;
+    font-size: xxx-large;
+}
+
+.session-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.session-flex button {
+    width: 100%;
+}
+
+.session-flex > div {
+    box-sizing: border-box;
+    height: fit-content;
+    padding: 2em;
+}
+
+.session-flex > div:nth-child(1) {
+    width: 60%;
+}
+
+.session-flex > div:nth-child(2) {
+    width: 40%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .session-flex {
+        flex-direction: column;
+    }
+
+    .session > h1 {
+        font-size: xx-large;
+    }
+
+    .session-flex > div {
+        padding: 0;
+    }
+
+    .session-flex > div {
+        width: 100% !important;
+    }
+
+    .session {
+        width: 90%;
+        box-sizing: border-box;
+        padding: 3em;
+    }
+
+    .session > h1 {
+        padding: 1em;
+    }
+
+    .session-bg {
+        padding: 8em 5%;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .session {
+        width: 100%;
+        padding-top: 2em;
+    }
+
+    .session > h1 {
+        padding: 0;
+        font-size: x-large;
+        margin-top: 0;
+    }
+    
+    .session-bg {
+        padding: 30vh 0 0;
+    }
+
+}

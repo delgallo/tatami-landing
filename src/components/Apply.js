@@ -6,7 +6,7 @@ const Apply = () => {
 
     return(
         <div onClick={() => window.gtag('event', 'click_apply')}>
-        	<PopupButton id={`kKo6RYeF#referral=${queryParams.get('r')}&hash=${Math.floor(Math.random() * 1000000)}`} className="button-85">
+        	<PopupButton id={`kKo6RYeF#referral=${queryParams.get('r')}&hash=${Math.floor(Math.random() * 1000000)}`} className="button-85 b-header">
 				Apply
 			</PopupButton>
         </div>

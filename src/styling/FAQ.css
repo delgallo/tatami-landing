@@ -30,7 +30,7 @@
 
     .faq {
         padding: 4em 0;
-        width: fit-content;
+        text-align: center;
         flex-direction: column;
     }
 
