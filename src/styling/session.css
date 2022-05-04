@@ -2,7 +2,7 @@
 .session-bg {
     flex-direction: row;
     width: 100%;
-    padding: 12em 2em;
+    padding: 16em 2em;
     box-sizing: border-box;
     background: linear-gradient(to bottom, transparent 20vh, var(--background) 60vh),
         url(https://notagamer.net/wp-content/uploads/2020/10/Minions_2018_April_Fools_promo_01-2.jpg);
@@ -73,15 +73,11 @@
     .session {
         width: 90%;
         box-sizing: border-box;
-        padding: 3em;
+        padding: 1em 3em;
     }
 
     .session > h1 {
         padding: 1em;
-    }
-
-    .session-bg {
-        padding: 8em 5%;
     }
 
 }
