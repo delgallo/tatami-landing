@@ -15,11 +15,17 @@
     flex-direction: row;
     align-items: center;
     gap: 2em;
+    justify-content: center;
+    margin: 2em 0;
 }
 
 .coach-card > p {
     word-wrap: break-word;
     line-height: 1.4;
+}
+
+.coach-card h3 {
+    margin-top: 0;
 }
 
 .coach-card h2 {
