@@ -1,6 +1,6 @@
 import "../styling/feature.css"
 import Infobox from "./Infobox"
-import Apply from "./Apply";
+import Apply from "./Apply"
 
 const Program = () => {
 	return (
@@ -10,16 +10,29 @@ const Program = () => {
 					<h1 style={{ textAlign: "center" }}>Academy</h1>
 				</div>
 				<p>
-					Tatami is an elite academy that unlocks your full potential & gets you scouted by professional teams.
+					We organize online classes of 20 students of the same level,
+					you will meet new players and train with them.
 					<br />
 					<br />
-					Our classes are designed by the best coaches; you will be surprised by what you are truly capable of.
+					Here in Tatami we believe that the best way to improve is to
+					have high-quality theoretical content and then practice a
+					lot.
 					<br />
 					<br />
-					Applicants for the first cohort must submit their applications by the <span style={{color: "aquamarine", fontWeight: "bold"}}>7th of May</span>.
+					Coming soon we will also have 1 to 1 coaching and an
+					official graduation with the chance of playing & get scouted
+					by a professional eSport team!
+					<br />
+					<br />
+					Applicants for the first cohort must submit their
+					applications by the{" "}
+					<span style={{ color: "aquamarine", fontWeight: "bold" }}>
+						7th of May
+					</span>
+					.
 				</p>
 			</div>
-			<Apply/>
+			<Apply />
 			<div className="info-list">
 				<Infobox
 					emoji="⛩️"
