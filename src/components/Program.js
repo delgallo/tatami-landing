@@ -31,14 +31,16 @@ const Program = () => {
                     "
 				/>
 				<Infobox
-					emoji="🏋️ CS"
+					emoji="🏋️"
 					title="Learn from the 0.02%"
 					text="We offer 1 to 1 coaching for those who want to boost their performance and climb to the top even faster."
+					comingSoon={true}
 				/>
 				<Infobox
-					emoji="🥋 CS"
+					emoji="🥋"
 					title="Get scouted by pros"
 					text="Top-ranking players will be observed by a professional scout from an eSport team."
+					comingSoon={true}
 				/>
 			</div>
 		</div>

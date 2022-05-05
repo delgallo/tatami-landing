@@ -62,6 +62,22 @@
     padding: 0;
 }
 
+.info-list > div > div {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coming-soon {
+    background-color: #2a2d35;
+    color: #a9b0bf;
+    padding: 0.7em;
+    font-size: small;
+    border-radius: 1em;
+    height: fit-content;
+}
+
 @media only screen and (min-width: 1800px) {
 
     .feature, .info-list {
