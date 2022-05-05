@@ -43,10 +43,9 @@ const Session = () => {
 					<div className="session-flex">
 						<div>
 							<p style={{ lineHeight: 1.4 }}>
-								Wave management is an essential skill no matter
+								An essential skill no matter
 								which role you play: It makes a huge impact on
 								your game. <br />
-								<br />
 								On the 6th of May at {formattedDate} PM, join
 								other players in this 1-hour live class to learn
 								how the pros do it. You'll learn the theory
@@ -59,9 +58,10 @@ const Session = () => {
 							<button
 								className="button-85"
 								style={{
-									margin: "1em 0",
+									margin: "1em auto",
 									fontSize: "medium",
 									fontWeight: "normal",
+									width: "60%",
 								}}
 								onClick={() =>
 									window.open(
@@ -71,7 +71,6 @@ const Session = () => {
 							>
 								Buy now
 							</button>
-							<p></p>
 							<Coach />
 						</div>
 					</div>

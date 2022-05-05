@@ -6,8 +6,8 @@
 
 .coach-card img {
     border-radius: 1em;
-    width: 6em;
-    height: 6em;
+    width: 4em;
+    height: 4em;
 }
 
 .coach-card > div {
@@ -16,7 +16,7 @@
     align-items: center;
     gap: 2em;
     justify-content: center;
-    margin: 2em 0;
+    margin: 3em 0;
 }
 
 .coach-card > p {

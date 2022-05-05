@@ -22,7 +22,7 @@ const Coach = () => {
             <div>
                 <img src={coach.img} />
                 <div>
-                    <h3>by <span onClick={() => window.open(coach.link)} style={{textDecoration: "underline", cursor: "pointer", fontSize: "x-large"}}>{coach.name}</span></h3>
+                    <h3 style={{marginBottom: "0.5em"}}>by <span onClick={() => window.open(coach.link)} style={{textDecoration: "underline", cursor: "pointer", fontSize: "x-large"}}>{coach.name}</span></h3>
                     <span>{coach.game} coach</span>
                 </div>
             </div>
