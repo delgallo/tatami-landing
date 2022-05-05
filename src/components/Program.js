@@ -6,41 +6,39 @@ const Program = () => {
 	return (
 		<div className="feature" id="program">
 			<div className="feature-text">
-				<div>
+				{/* <div>
 					<h1 style={{ textAlign: "center" }}>Academy</h1>
-				</div>
+				</div> */}
 				<p>
-					We organize online classes of 20 students of the same level,
-					you will meet new players and train with them.
+					Introducing the gym of the 21st century: one entirely
+					dedicated to gaming. We're partnering with top coaches to
+					create a complete experience to master your favourite game.
 					<br />
 					<br />
-					Here in Tatami we believe that the best way to improve is to
-					have high-quality theoretical content and then practice a
-					lot.
-					<br />
-					<br />
-					Coming soon we will also have 1 to 1 coaching and an
-					official graduation with the chance of playing & get scouted
-					by a professional eSport team!
-					.
+					Our method is revolutionary and accessible to everyone. Come
+					and join us, you'll be shocked to see what you're truly
+					capable of.
 				</p>
 			</div>
+
 			<Apply />
+
 			<div className="info-list">
 				<Infobox
 					emoji="⛩️"
-					title="Progressive and tailor-made learning paths"
-					text="Knowledge is only the beginning. Once the sensei identifies your weaknesses you will be assigned in courses to fix them. During each course you will deep dive into a specific aspect of the game, progressing from session to session."
+					title="Take part in live classes"
+					text=" We organize live classes for students of the same level. You will meet new players and train alongside them.
+                    "
 				/>
 				<Infobox
-					emoji="🥋"
-					title="Learn and practice with other players"
-					text="During these sessions, you will learn game mechanics, practice advanced strategies, and train along with other players. A sensei will oversee the session, ensuring every player learns and improves."
+					emoji="🏋️ CS"
+					title="Learn from the 0.02%"
+					text="We offer 1 to 1 coaching for those who want to boost their performance and climb to the top even faster."
 				/>
 				<Infobox
-					emoji="📜"
-					title="Graduate, get scouted and meet professionals"
-					text="Once you are ready, you will be given the opportunity to showcase your skills. At the graduation game, you will be observed by scouts from eSports teams and other professionals in the gaming industry."
+					emoji="🥋 CS"
+					title="Get scouted by pros"
+					text="Top-ranking players will be observed by a professional scout from an eSport team."
 				/>
 			</div>
 		</div>

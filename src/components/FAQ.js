@@ -3,13 +3,12 @@ import "../styling/feature.css"
 import Apply from "./Apply"
 
 const FAQ = () => {
-
 	const QAs = [
 		{
 			Q: "How can I apply to be a coach?",
 			A: (
 				<>
-					Hi, we are super happy to partner with new coaches. Try to
+					We are super happy to partner with new coaches. Try to
 					surprise us by filling out this{" "}
 					<a href="https://ynd1i9jcywl.typeform.com/to/HibHaWGg">
 						application
@@ -19,16 +18,16 @@ const FAQ = () => {
 			),
 		},
 		{
-			Q: "Which language is the service offered in?",
-			A: "Most of the resources on our site, including Live Dojos, will be held in English. We do however try to create classes of the same language when possible. 1to1 will be held in English except if the coach knows the language of the student",
+			Q: "Which language are supported?",
+			A: "The resources on our site are all available in English. We try to create classes of the same language when possible.",
 		},
 		{
 			Q: "How many people are in a class?",
-			A: "It varies between 15 and 25 coach included. We belive that this number provides the best experience.",
+			A: "Depending on the topic it varies between 15 and 25 (coach included)",
 		},
 		{
 			Q: "Will the classes be recorded?",
-			A: "Yes, all classes are recorded and can be viewed as many times as you want. Tatami includes replays, additional resources, notes and tips, and next steps all in one platform.",
+			A: "Yes, all classes are recorded and can be viewed as many times as you want.",
 		},
 	]
 

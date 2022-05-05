@@ -15,9 +15,9 @@ const Session = () => {
 		)
 	}
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [])
+	useEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
 
 	const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
 	const hisDate = convertTZ("2022/05/06 6:30:00 +0100", userTimezone)
@@ -26,7 +26,7 @@ const Session = () => {
 	const QAs = [
 		{
 			Q: "When ?",
-			A: `The lesson will take place at 6.30 PM (GMT+1) on friday 6th of May (${formattedDate} PM for you)`,
+			A: `The lesson will take place at 6.30 PM (GMT+1) on friday 6th of May`,
 		},
 		{
 			Q: "Where ?",
@@ -39,7 +39,7 @@ const Session = () => {
 			<Navbar />
 			<div className="session-bg">
 				<div className="session">
-					<h1>Wave Management live masterclass</h1>
+					<h1>Wave Management Live Masterclass</h1>
 					<div className="session-flex">
 						<div>
 							<p style={{ lineHeight: 1.4 }}>
@@ -76,9 +76,6 @@ const Session = () => {
 						</div>
 					</div>
 					<div>
-						<h1 style={{ textAlign: "center", padding: "3vh" }}>
-							FAQs
-						</h1>
 						{QAs.map(qa => (
 							<div className="faq" key={qa.Q}>
 								<h2>{qa.Q}</h2>
