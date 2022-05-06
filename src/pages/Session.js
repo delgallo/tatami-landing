@@ -65,11 +65,11 @@ const Session = () => {
 								}}
 								onClick={() =>
 									window.open(
-										"https://hpr.co/2SKQj0VbhteFrSWIe6A2s"
+										"https://tatami.hyper.co/purchase?link=uZ9zNVqGQ4RdQe862SkgZ"
 									)
 								}
 							>
-								Buy now
+								Join now
 							</button>
 							<Coach />
 						</div>
