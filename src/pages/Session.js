@@ -1,8 +1,8 @@
 import Coach from "../components/Coach"
 import Navbar from "../components/Navbar"
+import Bottombar from "../components/Bottombar"
 import "../styling/session.css"
 import "../styling/FAQ.css"
-import Bottombar from "../components/Bottombar"
 import { useEffect } from "react"
 
 const Session = () => {
@@ -43,9 +43,9 @@ const Session = () => {
 					<div className="session-flex">
 						<div>
 							<p style={{ lineHeight: 1.4 }}>
-								An essential skill no matter
-								which role you play: It makes a huge impact on
-								your game. <br />
+								An essential skill no matter which role you
+								play: It makes a huge impact on your game.{" "}
+								<br />
 								On the 6th of May at {formattedDate} PM, join
 								other players in this 1-hour live class to learn
 								how the pros do it. You'll learn the theory
