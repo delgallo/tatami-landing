@@ -18,7 +18,7 @@ const FAQ = () => {
 			),
 		},
 		{
-			Q: "Which language are supported?",
+			Q: "What languages are supported?",
 			A: "The resources on our site are all available in English. We try to create classes of the same language when possible.",
 		},
 		{
