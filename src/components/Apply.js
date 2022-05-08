@@ -4,14 +4,11 @@ const Apply = () => {
 	const queryParams = new URLSearchParams(window.location.search)
 
 	return (
-		<Link to={{ pathname: "/wave-management" }}>
-			<button
-				onClick={() => window.gtag("event", "click_apply")}
-				className="button-85 b-header"
-			>
-				Join class
-			</button>
-		</Link>
+		<div onClick={() => window.gtag('event', 'click_apply')}>
+        	<PopupButton id={`kKo6RYeF#referral=${queryParams.get('r')}&hash=${Math.floor(Math.random() * 1000000)}`} className="button-85">
+				Apply
+			</PopupButton>
+        </div>
 	)
 }
 
