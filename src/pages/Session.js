@@ -6,27 +6,21 @@ import "../styling/FAQ.css"
 import { useEffect } from "react"
 
 const Session = () => {
+	useEffect(() => window.scrollTo(0, 0), [])
+
 	const convertTZ = (date, tzString) => {
-		return new Date(
-			(typeof date === "string" ? new Date(date) : date).toLocaleString(
-				"en-US",
-				{ timeZone: tzString }
-			)
-		)
+		return new Date(date.toLocaleString("en-US", { timeZone: tzString }))
 	}
 
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
-
+	const COACH_DATE = new Date("2022/05/06 18:30:00 +0100")
 	const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone
-	const hisDate = convertTZ("2022/05/06 6:30:00 +0100", userTimezone)
-	const formattedDate = `${hisDate.getHours()}:${hisDate.getMinutes()}`
+	const userDate = convertTZ(COACH_DATE, userTimezone)
+	const formattedDate = `${userDate.getHours()}:${userDate.getMinutes()} (${userTimezone})`
 
 	const QAs = [
 		{
 			Q: "When ?",
-			A: `The lesson will take place at 6.30 PM (GMT+1) on friday 6th of May`,
+			A: `The lesson will take place at 18:30 (GMT+1) on friday 6th of May`,
 		},
 		{
 			Q: "Where ?",
@@ -46,10 +40,10 @@ const Session = () => {
 								An essential skill no matter which role you
 								play: It makes a huge impact on your game.{" "}
 								<br />
-								On the 6th of May at {formattedDate} PM, join
-								other players in this 1-hour live class to learn
-								how the pros do it. You'll learn the theory
-								during the first half and then be guided through
+								On the 6th of May at {formattedDate}, join other
+								players in this 1-hour live class to learn how
+								the pros do it. You'll learn the theory during
+								the first half and then be guided through
 								exercises to put it into practice during the
 								second half.{" "}
 							</p>
