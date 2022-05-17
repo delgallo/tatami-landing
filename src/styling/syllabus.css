@@ -1,0 +1,51 @@
+
+.syllabus {
+    width: 40%;
+    margin: auto;
+    border-left: 1px solid;
+    border-image: linear-gradient(0deg, transparent 0%, var(--primary) 8%, var(--secondary) 92%, transparent 100%) 1;
+    padding-left: 2em;
+    box-sizing: border-box;
+}
+
+.syllabus > div {
+    margin: 3em 0;
+    padding: 1em 2em;
+    border-radius: 1em;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.syllabus > div::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(32px);
+    position: absolute;
+    left: calc(-2px - 2.5em);
+    top: calc(50% - .5em);
+}
+
+@media only screen and (max-width: 600px) {
+    .syllabus {
+        width: 90%;
+    }
+
+    .syllabus > div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1800px) {
+
+    .syllabus {
+        width: 60vw;
+    }
+
+}

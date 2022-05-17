@@ -1,0 +1,6 @@
+
+.background-gradient {
+    background: linear-gradient(to bottom right, var(--primary), transparent 30%),
+    radial-gradient(circle at top left, var(--primary) 0, var(--secondary), var(--t-background) 80%),
+    url(https://www.datocms-assets.com/50154/1624886121-pattern.jpeg);
+} 

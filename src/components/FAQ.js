@@ -23,7 +23,7 @@ const FAQ = () => {
 		},
 		{
 			Q: "How many people are in a class?",
-			A: "Depending on the topic it varies between 15 and 25 (coach included)",
+			A: "Depending on the topic it varies between 15 and 20 (coach included)",
 		},
 		{
 			Q: "Will the classes be recorded?",
