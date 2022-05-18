@@ -1,6 +1,5 @@
 import "../styling/FAQ.css"
 import "../styling/feature.css"
-import Apply from "./Apply"
 
 const FAQ = () => {
 	const QAs = [

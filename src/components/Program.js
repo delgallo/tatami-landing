@@ -1,6 +1,5 @@
 import "../styling/feature.css"
 import Infobox from "./Infobox"
-import Apply from "./Apply"
 
 const Program = () => {
 	return (
