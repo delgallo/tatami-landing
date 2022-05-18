@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4em;
 }
 
 .img-background {
@@ -34,7 +35,7 @@
 }
 
 .coach {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     gap: 2em;
     align-items: center;
@@ -42,7 +43,6 @@
     padding-right: 2em;
     border-radius: 10em;
     width: fit-content;
-    margin: 0 auto;
 }
 
 .coach > p {

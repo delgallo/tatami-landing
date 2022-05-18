@@ -4,14 +4,18 @@ import "../styling/base.css"
 import Head from "../components/Head"
 import FAQ from "../components/FAQ"
 import Bottombar from "../components/Bottombar"
+import Programs from "../components/Programs"
 
 function App() {
 	return (
 		<>
 			<Navbar />
 			<Head />
-			<Program />
-			<FAQ />
+			<div className="contents">
+				<Program />
+				<Programs/>
+				<FAQ />
+			</div>
 			<Bottombar />
 		</>
 	)

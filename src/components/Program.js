@@ -21,26 +21,21 @@ const Program = () => {
 				</p>
 			</div>
 
-			<Apply />
-
 			<div className="info-list">
 				<Infobox
 					emoji="⛩️"
-					title="Take part in live classes"
-					text=" We organize live classes for students of the same level. You will meet new players and train alongside them.
-                    "
+					title="Multiplayer Live classes"
+					text=" During the lesson, the coach and other players will be in a virtual room with you. We select our coaches from the top 0.02% of ranked players."
 				/>
 				<Infobox
 					emoji="🏋️"
-					title="Learn from the 0.02%"
-					text="We offer 1 to 1 coaching for those who want to boost their performance and climb to the top even faster."
-					comingSoon={true}
+					title="Theory and practice"
+					text="The coach will first go over the theory, then assign some drills and check to see if you are actually improving."
 				/>
 				<Infobox
 					emoji="🥋"
-					title="Get scouted by pros"
-					text="Top-ranking players will be observed by a professional scout from an eSport team."
-					comingSoon={true}
+					title="Our programs"
+					text="Along with our coaches, we designed the ideal improvement plan for you, from the basics down to the smallest details."
 				/>
 			</div>
 		</div>

@@ -21,42 +21,42 @@ const Course = () => {
 			{
 				title: "Think like a pro",
 				description: "Every great player starts from a great mindset, but also from settings and map awareness",
-				when: "2022-05-14T19:47:01+0000"
+				when: "2022-05-30T17:30:00Z"
 			},
 			{
 				title: "Drafting, meta, itemization",
 				description: "Learn the gears, champions and runes, build your victory from the start",
-				when: "2022-05-14T19:47:01+0000"
+				when: "2022-06-01T17:30:00Z"
 			},
 			{
 				title: "Auto-attacks & mechanics pt.1",
 				description: "Master the guns, master the game, from attack range to input buffering",
-				when: "2022-05-14T19:47:01+0000"
+				when: "2022-06-06T17:30:00Z"
 			},
 			{
 				title: "Auto-attacks & mechanics pt.2",
 				description: "Master the guns, master the game, from attack range to input buffering",
-				when: "2022-05-14T19:47:01+0000"
+				when: "2022-06-08T17:30:00Z"
 			},
 			{
 				title: "Windows of opportunity",
 				description: "If you had one shot, one opportunity…you don’t wanna miss that",
-				when: "2022-05-14T19:47:01+0000"
+				when: "2022-06-13T17:30:00Z"
 			},
 			{
 				title: "Wave management & control",
 				description: "Freedom is control, start handling the flow of the minion waves",
-				when: "2022-05-14T19:47:01+0000"
+				when: "2022-06-15T17:30:00Z"
 			},
 			{
 				title: "Map & Macro pt.1",
 				description: "Know your battleground and use it to your advantage, from quadrants to tempo",
-				when: "2022-05-14T19:47:01+0000"
+				when: "2022-06-20T17:30:00Z"
 			},
 			{
 				title: "Map & Macro pt.2",
 				description: "Know your battleground and use it to your advantage, from quadrants to tempo",
-				when: "2022-05-14T19:47:01+0000"
+				when: "2022-06-22T17:30:00Z"
 			}
 		]
 	}
@@ -69,7 +69,11 @@ const Course = () => {
 				<h1>
 					{content.title}
 				</h1>
-				<button className="button-85">Join now</button>
+				<button className="button-85" style={{margin: 0}}>Join now</button>
+				<div className="coach glass">
+					<img src={content.coach.img}/>
+					<p>by {content.coach.name}</p>
+				</div>
 			</div>
 			<div>
 				<div style={{position: "relative"}}>
@@ -78,11 +82,7 @@ const Course = () => {
 				</div>
 			</div>
 		</div>
-		<div className="course-description">{content.description.split('\n').map(str => <p>{str}</p>)}</div>
-		<div className="coach glass">
-			<img src={content.coach.img}/>
-			<p>by {content.coach.name}</p>
-		</div>
+		<div className="course-description">{content.description.split('\n').map(str => <p key={str}>{str}</p>)}</div>
 		<div className="syllabus">
 			{content.syllabus.map(s => (
 				<div className="glass" key={s.title}>
@@ -90,7 +90,7 @@ const Course = () => {
 						<h3>{s.title}</h3>
 						<p>{s.description}</p>
 					</div>
-					<TimeWidget time={s.when}/>
+					<TimeWidget time={new Date(s.when)}/>
 				</div>
 			))}
 		</div>

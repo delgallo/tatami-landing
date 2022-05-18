@@ -40,7 +40,6 @@ const FAQ = () => {
 					<p>{qa.A}</p>
 				</div>
 			))}
-			<Apply />
 			<div style={{ textAlign: "center", padding: "2em 0" }} id="contact">
 				<h2 style={{ fontSize: "x-large", margin: 0 }}>
 					Still have doubts?

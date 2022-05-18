@@ -49,6 +49,11 @@ h1 {
     font-size: 4em;
 }
 
+.contents {
+    margin: 0 auto;
+    width: 90%;
+}
+
 nav .button-85 {
     padding: 1em 3em;
     font-size: medium;
@@ -125,6 +130,13 @@ nav .button-85 {
         width: 80%;
     }
 
+    .contents {
+        margin: 0;
+        padding: 0 1em;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
     .head p {
         font-size: large;
         padding: 0;
@@ -140,5 +152,14 @@ nav .button-85 {
     .head h1 {
         font-size: 2em;
         width: 80%;
+    }    
+    
+}
+
+
+@media only screen and (min-width: 1800px) {
+
+    .contents {
+        width: 60%;
     }
 }
