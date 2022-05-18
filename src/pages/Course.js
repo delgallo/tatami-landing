@@ -7,6 +7,7 @@ import "../styling/design.css"
 import "../styling/syllabus.css"
 import { useEffect } from "react"
 import TimeWidget from "../components/Time"
+import Coach from "../components/Coach"
 
 const Course = () => {
 
@@ -15,7 +16,8 @@ const Course = () => {
 		description: "The purpose of this course is to provide players with the fundamental knowledge needed to truly understand the dynamics of the game and be able to improve.\n The onboarding is simple: during the purchase, we will ask you for your email address. A few days before each lesson starts, you will receive an invitation at the email address you gave us.\nThe course will be held on our platform at the time shown down below.",
 		coach: {
 			name: "Sagittarius",
-			img: "https://yt3.ggpht.com/ytc/AKedOLQ5cCisFjTr9IVRCN3a5IsExBPJO6iJ1MU4PUvMtg=s900-c-k-c0x00ffffff-no-rj",
+			img: "https://tatami-static.s3.eu-central-1.amazonaws.com/ava.jpg",
+			description: "Sagittarius is a full-time high ELO coach, with many years of competitive and coaching experience. He helps his students improve their performance by identifying their key mistakes and correcting their bad habits. He is currently ranked #1 Lucian in the world,  but can coach all roles and playstyles!"
 		},
 		syllabus: [
 			{
@@ -70,10 +72,6 @@ const Course = () => {
 					{content.title}
 				</h1>
 				<button className="button-85" style={{margin: 0}}>Join now</button>
-				<div className="coach glass">
-					<img src={content.coach.img}/>
-					<p>by {content.coach.name}</p>
-				</div>
 			</div>
 			<div>
 				<div style={{position: "relative"}}>
@@ -82,17 +80,20 @@ const Course = () => {
 				</div>
 			</div>
 		</div>
-		<div className="course-description">{content.description.split('\n').map(str => <p key={str}>{str}</p>)}</div>
-		<div className="syllabus">
-			{content.syllabus.map(s => (
-				<div className="glass" key={s.title}>
-					<div>
-						<h3>{s.title}</h3>
-						<p>{s.description}</p>
+		<div className="contents">
+			<div className="course-description">{content.description.split('\n').map(str => <p key={str}>{str}</p>)}</div>
+			<div className="syllabus">
+				{content.syllabus.map(s => (
+					<div className="glass" key={s.title}>
+						<div>
+							<h3>{s.title}</h3>
+							<p>{s.description}</p>
+						</div>
+						<TimeWidget time={new Date(s.when)}/>
 					</div>
-					<TimeWidget time={new Date(s.when)}/>
-				</div>
-			))}
+				))}
+			</div>
+			<Coach coach={content.coach}/>
 		</div>
 	<Bottombar/>
 	</div>

@@ -11,7 +11,6 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   transition: 1s;
-  font-weight: bold;
   font-size: larger;
   padding: 1em 0;
   width: 20em;
@@ -66,7 +65,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #222;
+  background: var(--background);
   left: 0;
   top: 0;
   border-radius: 10px;

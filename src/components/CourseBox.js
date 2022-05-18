@@ -9,7 +9,7 @@ const Coursebox = ({slug}) => {
         thumbnail: "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf06237d0ebbe32e0/5efc23abee48da0f762bc2f2/LOL_PROMOART_4.jpg",
 		coach: {
 			name: "Sagittarius",
-			img: "https://yt3.ggpht.com/ytc/AKedOLQ5cCisFjTr9IVRCN3a5IsExBPJO6iJ1MU4PUvMtg=s900-c-k-c0x00ffffff-no-rj",
+			img: "https://tatami-static.s3.eu-central-1.amazonaws.com/ava.jpg",
 		},
     }
 

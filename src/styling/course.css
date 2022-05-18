@@ -34,33 +34,12 @@
     filter: drop-shadow(5px 5px 5px #222);
 }
 
-.coach {
-    display: inline-flex;
-    flex-direction: row;
-    gap: 2em;
-    align-items: center;
-    padding: .5em;
-    padding-right: 2em;
-    border-radius: 10em;
-    width: fit-content;
-}
-
-.coach > p {
-    margin: 0;
-    font-size: smaller;
-}
-
-.coach  > img {
-    width: 2em;
-    border-radius: 2em;
-}
-
 .course-description {
-    width: 40vw;
-    margin: 2em auto 4em;
     font-size: large;
     line-height: 1.4;
     text-align: left;
+    margin: 0 auto;
+    width: 80%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -74,23 +53,16 @@
         width: 100%;
     }
 
-    .course-description {
-        padding: 0;
-        width: 85%;
-        margin-top: 0;
-        margin-bottom: 2em;
-    }
-
     .course-img,
     .img-background {
         display: none;
     }
 }
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (min-width: 1800px) {
 
     .course-description {
-        width: 60vw;
+        width: 80%;
     }
 
 }
