@@ -5,8 +5,12 @@ import Head from "../components/Head"
 import FAQ from "../components/FAQ"
 import Bottombar from "../components/Bottombar"
 import Programs from "../components/Programs"
+import { useEffect } from "react"
 
 function App() {
+	
+	useEffect(() => window.scrollTo(0, 0), [])
+
 	return (
 		<>
 			<Navbar />

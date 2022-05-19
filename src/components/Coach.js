@@ -8,8 +8,8 @@ const Coach = ({coach}) => {
             <div>
                 <p style={{margin: 0}}>Held by coach</p>
                 <h2>{coach.name}</h2>
-                <p>{coach.description}</p>
             </div>
+            <p>{coach.description}</p>
         </div>
     )
 

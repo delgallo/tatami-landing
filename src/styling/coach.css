@@ -2,8 +2,9 @@
 .coach {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 4em;
+    gap: 2em;
     padding: 2em;
     box-sizing: border-box;
     border-radius: 1em;
@@ -12,20 +13,29 @@
 }
 
 .coach > img {
-    flex: 1 1 15%;
+    flex: 1 1;
     max-width: 15%;
     border-radius: 100%;
     box-sizing: border-box;
 }
 
 .coach > div {
-    flex: 4 4 85%;
+    flex: 4 4;
 }
 
 @media only screen and (min-width: 1800px) {
 
     .coach {
         width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .coach {
+        width: 100%;
+        font-size: small;
     }
 
 }

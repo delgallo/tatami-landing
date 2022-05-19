@@ -42,21 +42,9 @@
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
+  animation: glowing-button 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
-}
-
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
 }
 
 .button-85:after {
@@ -92,4 +80,70 @@
     display: none;
   }
 
+}
+
+.dashing-button {
+  position: relative;
+  background-color: var(--glass);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--glass-border);
+  color: aliceblue;
+  padding: 1em;
+  border-radius: 1em;
+  transition: .5s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+
+.dashing-button > * {
+  max-height: 1em;
+}
+
+.dashing-button:hover {
+  background-color: rgb(63, 63, 70, .7);
+}
+
+.dashing-button::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    transparent 10%,
+    var(--glass-border) 30%,
+    transparent 50%
+  );
+  position: absolute;
+  top: -1px;
+  left: -1px; 
+  background-size: 1000%;
+  z-index: -1;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  animation: dash 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 1em;
+}
+
+@keyframes glowing-button {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000% 0;
+  }
 }

@@ -42,11 +42,21 @@
     width: 80%;
 }
 
+
+@media only screen and (min-width: 1200px) {
+
+    .course-header {
+        background: none !important;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
 
     .course-header {
         flex-direction: column;
-        padding: 6em 2em 2em;
+        padding: 12em 4em 4em;
+        margin-bottom: 2em;
+        font-size: small;
     }
 
     .course-header > div {

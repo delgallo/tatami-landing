@@ -1,0 +1,22 @@
+
+.stripe-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stripe-form > input, .card-details {
+    padding: 1em;
+    color: white;
+    background-color: var(--t-background);
+    border-radius: 1em;
+    border: none;
+    width: 100%;
+    font-size: normal;
+    box-sizing: border-box;
+}
+
+input:autofill {
+    background-color: var(--t-background) !important;
+    color: -internal-light-dark(rgb(178, 39, 39), rgb(255, 255, 255)) !important;
+} 
