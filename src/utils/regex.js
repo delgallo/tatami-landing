@@ -1,0 +1,1 @@
+export const EmailRE = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)

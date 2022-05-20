@@ -1,4 +1,4 @@
 .arrow {
-    animation: MoveUpDown 1s linear infinite;
-    filter: invert(1);
-  }
+	animation: MoveUpDown 1s linear infinite;
+	filter: invert(1);
+}
