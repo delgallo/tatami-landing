@@ -1,9 +1,4 @@
-import {
-	useStripe,
-	useElements,
-	CardElement,
-	PaymentElement,
-} from "@stripe/react-stripe-js"
+import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
 import { useEffect, useState } from "react"
 
 import "../styling/stripe.css"
@@ -33,6 +28,7 @@ const CARD_OPTIONS = {
 	},
 }
 
+// CUM - CI ENTRANO SOLDIIIIII
 const CheckoutForm = ({ info, setInfo, con, setCon, onSuccessfulCheckout }) => {
 	const stripe = useStripe()
 	const elements = useElements()
@@ -41,6 +37,7 @@ const CheckoutForm = ({ info, setInfo, con, setCon, onSuccessfulCheckout }) => {
 	const [isLoading, setIsLoading] = useState(false)
 
 	const [emailValid, setEmailValid] = useState(true)
+	const [codeValid, setCodeValid] = useState(true)
 
 	const handleEmailChange = e => {
 		setInfo(i => ({ ...i, email: e.target.value }))
@@ -51,6 +48,9 @@ const CheckoutForm = ({ info, setInfo, con, setCon, onSuccessfulCheckout }) => {
 		Iaxios.get(`/utils/getDiscount/${info.referral}`)
 			.then(res => {
 				const discount = Math.round(res.data * con.price)
+				if (discount === 0) setCodeValid(false)
+				else setCodeValid(true)
+
 				setCon(c => ({
 					...c,
 					discounted_price:
@@ -76,7 +76,7 @@ const CheckoutForm = ({ info, setInfo, con, setCon, onSuccessfulCheckout }) => {
 			name: e.target.name.value,
 			email: e.target.email.value,
 			referral: e.target.referral.value,
-			courseID: "62850ea5aea6ae0fc120f0c8",
+			courseID: "62850ea5aea6ae0fc120f0c8", // TODO RENDI DINAMICO
 		}
 
 		setIsLoading(true)
@@ -121,6 +121,7 @@ const CheckoutForm = ({ info, setInfo, con, setCon, onSuccessfulCheckout }) => {
 				name="referral"
 				placeholder="Referrall code"
 				value={info.referral}
+				style={codeValid ? {} : { border: "1px solid red" }}
 				onChange={e =>
 					setInfo(i => ({ ...i, referral: e.target.value }))
 				}

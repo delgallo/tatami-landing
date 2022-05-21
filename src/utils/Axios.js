@@ -1,4 +1,7 @@
 import axios from "axios"
-const TEST = true
 
-export const Iaxios = axios.create({baseURL: TEST ? "http://localhost:6969" : "https://api.tatami.gg"})
+export const Iaxios = axios.create({
+	baseURL: process.env.REACT_APP_TEST
+		? "http://localhost:6969"
+		: "https://api.tatami.gg",
+})

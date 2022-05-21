@@ -4,12 +4,11 @@ import { loadStripe } from "@stripe/stripe-js"
 import CheckoutForm from "./CheckoutForm"
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import axios from "axios"
-import { Iaxios } from "../utils/Axios"
 
-// const stripePromise = loadStripe('pk_live_51Kvd7aFOn0gXuI3PlrkvWGEMM3GzszUpmxmfsu7pEf4nhzhdTh2EsOLRSmwRvrwPDh7rIMN4FnaVONDZ7V7aINvw003pNY9O9E')
 const stripePromise = loadStripe(
-	"pk_test_51Kvd7aFOn0gXuI3Pwm2IwB0HdkRzEmyWcnh6XCUbVogmz6ZCDbLp3OGWKEV93qHFg8mhGqd0gHbplMskrhNteDfs00QvDANrvK"
+	process.env.REACT_APP_TEST
+		? process.env.REACT_APP_STRIPE_TEST
+		: "pk_live_51Kvd7aFOn0gXuI3PlrkvWGEMM3GzszUpmxmfsu7pEf4nhzhdTh2EsOLRSmwRvrwPDh7rIMN4FnaVONDZ7V7aINvw003pNY9O9E"
 )
 
 const c = {
