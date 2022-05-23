@@ -10,7 +10,7 @@ const Navbar = () => {
 		<nav>
 			<Link to={{ pathname: "/" }} className="logo">
 				<img src={logo} alt="logo" />
-				<div className="nav-title">Tatami</div>
+				<div className="nav-title">tatami</div>
 			</Link>
 		</nav>
 	)
