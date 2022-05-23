@@ -6,10 +6,19 @@ import FAQ from "../components/FAQ"
 import Bottombar from "../components/Bottombar"
 import Programs from "../components/Programs"
 import { useEffect } from "react"
+import { useDispatch } from "react-redux"
+import { bindActionCreators } from "redux"
+import { actionCreators } from "../state/index"
 
 function App() {
-	
-	useEffect(() => window.scrollTo(0, 0), [])
+	const dispatch = useDispatch()
+	const { setReferral } = bindActionCreators(actionCreators, dispatch)
+
+	useEffect(() => {
+		window.scrollTo(0, 0)
+		const params = new URLSearchParams(window.location.search)
+		setReferral(params.get("affiliate"))
+	}, [])
 
 	return (
 		<>
@@ -17,7 +26,7 @@ function App() {
 			<Head />
 			<div className="contents">
 				<Program />
-				<Programs/>
+				<Programs />
 				<FAQ />
 			</div>
 			<Bottombar />

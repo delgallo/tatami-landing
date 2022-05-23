@@ -4,7 +4,7 @@
 	justify-content: space-around;
 }
 
-.stripe-form > input,
+input,
 .card-details {
 	padding: 1em;
 	color: white;

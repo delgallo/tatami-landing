@@ -1,78 +1,72 @@
-
 .course-header {
-    display: flex;
-    flex-direction: row;
-    padding: 12em 6em 2em;
+	display: flex;
+	flex-direction: row;
+	padding: 12em 6em 2em;
 }
 
 .course-header > div {
-    width: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4em;
+	width: 50%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4em;
 }
 
 .img-background {
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 3em;
-    border: none !important;
-    z-index: 0;
+	position: absolute;
+	bottom: 0;
+	right: 5%;
+	width: 15vw;
+	height: 15vw;
+	border-radius: 3em;
+	border: none !important;
+	z-index: 0;
 }
 
 .course-img {
-    height: 25vw;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    filter: drop-shadow(5px 5px 5px #222);
+	height: 25vw;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	filter: drop-shadow(5px 5px 5px #222);
 }
 
 .course-description {
-    font-size: large;
-    line-height: 1.4;
-    text-align: left;
-    margin: 0 auto;
-    width: 80%;
+	font-size: large;
+	line-height: 1.4;
+	text-align: left;
+	margin: 2em auto;
+	width: 80%;
 }
 
-
 @media only screen and (min-width: 1200px) {
-
-    .course-header {
-        background: none !important;
-    }
+	.course-header {
+		background: none !important;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
+	.course-header {
+		flex-direction: column;
+		padding: 12em 4em 4em;
+		margin-bottom: 2em;
+		font-size: small;
+	}
 
-    .course-header {
-        flex-direction: column;
-        padding: 12em 4em 4em;
-        margin-bottom: 2em;
-        font-size: small;
-    }
+	.course-header > div {
+		width: 100%;
+	}
 
-    .course-header > div {
-        width: 100%;
-    }
-
-    .course-img,
-    .img-background {
-        display: none;
-    }
+	.course-img,
+	.img-background {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 1800px) {
-
-    .course-description {
-        width: 80%;
-    }
-
+	.course-description {
+		width: 80%;
+	}
 }

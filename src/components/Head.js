@@ -21,7 +21,7 @@ const Head = () => {
 				}
 			>
 				<span>Discover more</span>
-				<img src={arrow} alt="React Logo" className="arrow" />
+				<img src={arrow} alt="arrow" className="arrow" />
 			</div>
 		</div>
 	)

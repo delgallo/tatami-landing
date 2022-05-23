@@ -32,15 +32,18 @@ const FAQ = () => {
 
 	return (
 		<div className="feature" id="faq">
-			<h1 style={{ textAlign: "center", padding: "5vh" }}>FAQs</h1>
+			<h1 style={{ textAlign: "center", padding: "10vh 0 5vh" }}>FAQs</h1>
 			{QAs.map(qa => (
 				<div className="faq" key={qa.Q}>
 					<h2>{qa.Q}</h2>
 					<p>{qa.A}</p>
 				</div>
 			))}
-			<div style={{ textAlign: "center", padding: "2em 0" }} id="contact">
-				<h2 style={{ fontSize: "x-large", margin: 0 }}>
+			<div
+				style={{ textAlign: "center", padding: "1em 0 3em" }}
+				id="contact"
+			>
+				<h2 style={{ fontSize: "x-large", margin: "1em 0" }}>
 					Still have doubts?
 				</h2>
 				<p>

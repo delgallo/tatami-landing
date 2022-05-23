@@ -1,0 +1,27 @@
+.admin {
+	display: flex;
+	flex-direction: row;
+	gap: 4em;
+	margin-right: 4rem;
+}
+
+.admin-panel {
+	background-color: var(--glass);
+	height: 100vh;
+	width: 15rem;
+	display: flex;
+	flex-direction: column;
+	padding-top: 6rem;
+	margin: 0;
+}
+
+.admin-panel > a {
+	padding: 1rem 2rem;
+	color: white;
+	font-size: small;
+}
+
+.link-active {
+	background-color: var(--glass);
+	font-weight: bold;
+}

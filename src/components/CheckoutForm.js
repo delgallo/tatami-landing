@@ -1,5 +1,6 @@
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
 import { useEffect, useState } from "react"
+import { useSelector } from "react-redux"
 
 import "../styling/stripe.css"
 import { Iaxios } from "../utils/Axios"
@@ -37,7 +38,7 @@ const CheckoutForm = ({ info, setInfo, con, setCon, onSuccessfulCheckout }) => {
 	const [isLoading, setIsLoading] = useState(false)
 
 	const [emailValid, setEmailValid] = useState(true)
-	const [codeValid, setCodeValid] = useState(true)
+	const [codeValid, setCodeValid] = useState(false)
 
 	const handleEmailChange = e => {
 		setInfo(i => ({ ...i, email: e.target.value }))
@@ -45,6 +46,15 @@ const CheckoutForm = ({ info, setInfo, con, setCon, onSuccessfulCheckout }) => {
 	}
 
 	useEffect(() => {
+		if (info.referral === "") {
+			setCodeValid(false)
+			setCon(c => ({
+				discount: 0,
+				discounted_price: c.price,
+				price: c.price,
+			}))
+			return
+		}
 		Iaxios.get(`/utils/getDiscount/${info.referral}`)
 			.then(res => {
 				const discount = Math.round(res.data * con.price)
@@ -95,7 +105,8 @@ const CheckoutForm = ({ info, setInfo, con, setCon, onSuccessfulCheckout }) => {
 		}
 
 		const res = await stripePaymentMethodHandler(result, stripe, info)
-		if (res !== "success") setError(res)
+		if (res === "success") onSuccessfulCheckout()
+		else setError(res)
 		setIsLoading(false)
 	}
 
@@ -121,7 +132,11 @@ const CheckoutForm = ({ info, setInfo, con, setCon, onSuccessfulCheckout }) => {
 				name="referral"
 				placeholder="Referrall code"
 				value={info.referral}
-				style={codeValid ? {} : { border: "1px solid red" }}
+				style={
+					codeValid
+						? { border: "1px solid green" }
+						: { border: "1px solid red" }
+				}
 				onChange={e =>
 					setInfo(i => ({ ...i, referral: e.target.value }))
 				}
