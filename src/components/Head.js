@@ -11,7 +11,7 @@ const Head = () => {
 				/>
 				Your browser does not support the video tag.
 			</video>
-			<h1>Designed to make you win more</h1>
+			<h1>Designed to make you win</h1>
 			<div
 				onClick={() =>
 					window.scrollBy({
